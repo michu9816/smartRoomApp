@@ -2,6 +2,7 @@
 import HomePage from '../pages/home.vue';
 import LedPage from '../pages/led.vue';
 import BathroomPage from '../pages/bathroom.vue';
+import GatePage from '../pages/gate.vue';
 import AddDevicePage from '../pages/addDevice.vue';
 
 
@@ -26,6 +27,10 @@ var routes = [
   {
     path: '/bathroom/:deviceId',
     component: BathroomPage,
+  },
+  {
+    path: '/gate/:deviceId',
+    component: GatePage,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

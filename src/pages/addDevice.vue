@@ -45,6 +45,9 @@
 						<option value="tv">
 							Dekoder Open Webif
 						</option>
+						<option value="gate">
+							Brama
+						</option>
 					</select>
 				</div>
 			</div>

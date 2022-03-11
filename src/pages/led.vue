@@ -515,13 +515,7 @@ export default {
 	computed:{
 		thisDeviceData(){
 			const vm = this;
-			const list = [];
-			const list2 = store.getters.devices.value;
-
-			for(let i = 0; i < list2.length ; i++){
-				list.push(list2[i])
-				console.log(i);
-			}
+			const list = store.getters.devices.value;
 
 			return list.filter(obj => obj.id == vm.f7route.params.deviceId)
 		},

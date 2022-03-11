@@ -11,6 +11,7 @@ import 'framework7/framework7-bundle.css';
 
 // Import Icons and App Custom Styles
 import '../css/icons.css';
+import '../css/gate.css';
 import '../css/app.css';
 import '../css/wheelcolorpicker.css'
 import '../assets/icons/pro/css/all.css';
