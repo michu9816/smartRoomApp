@@ -1,0 +1,44 @@
+{
+  "name": "smartroom",
+  "private": true,
+  "version": "1.0.0",
+  "description": "smartRoom",
+  "repository": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build",
+    "build-cordova": "cross-env TARGET=cordova cross-env NODE_ENV=production vite build && node ./build/build-cordova.js && cd cordova && cordova build",
+    "postinstall": "cpy ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
+  },
+  "browserslist": [
+    "Android >= 7",
+    "IOS >= 11",
+    "Safari >= 11",
+    "Chrome >= 49",
+    "Firefox >= 31",
+    "Samsung >= 5"
+  ],
+  "dependencies": {
+    "dom7": "^3.0.0",
+    "framework7": "^6.3.16",
+    "framework7-icons": "^5.0.5",
+    "framework7-vue": "^6.3.16",
+    "material-icons": "^1.10.7",
+    "skeleton-elements": "^3.5.0",
+    "swiper": "^6.8.4",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vue/compiler-sfc": "^3.2.31",
+    "cpy-cli": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "postcss-preset-env": "^6.7.1",
+    "rollup": "^2.69.2",
+    "vite": "^2.8.6",
+    "vite-plugin-html": "^3.1.0"
+  }
+}
