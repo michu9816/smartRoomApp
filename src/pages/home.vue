@@ -52,6 +52,15 @@ export default {
 	created: function () {
 		const vm = this;
 		vm.loadDevicesList();  
+
+// 			cordova.plugin.http.get('http://192.168.8.30/api/statusinfo', {
+//   id: '12',
+//   message: 'test'
+// }, { Authorization: 'OAuth2: token' }, function(response) {
+//   alert(response.status);
+// }, function(response) {
+//   alert(response.error);
+// });
 	},
 	methods: {
 		loadDevicesList(){

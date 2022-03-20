@@ -11,6 +11,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+import jQuery from "jquery";
 (function ($) {
   /**
    * Function: wheelColorPicker
@@ -847,7 +848,7 @@
     var $overlay = $('<div class="jQWCP-overlay" style="display: none;"></div>');
     $overlay.on('click', WCP.Handler.overlay_click);
     WCP.ColorPicker.overlay = $overlay.get(0);
-    $('.body').append($overlay);
+    $('body').append($overlay);
 
     // Insert CSS for color wheel
     var wheelImage = WCP.ColorPicker.getWheelDataUrl(200);
@@ -1171,7 +1172,7 @@
 
         // Assign widget to global
         $widget.hide();
-        $('.body').append($widget);
+        $('body').append($widget);
 
         // Bind popup events
         $widget.on('mousedown.wheelColorPicker', WCP.Handler.widget_mousedown_popup);
@@ -2562,7 +2563,7 @@
     // On mobile chrome, the top left of the page is not always set at (0,0)
     // making window.scrollX/Y and $.offset() useless
     $(document).ready(function() {
-      $('.body').append(
+      $('body').append(
         '<div id="jQWCP-PageOrigin" style="position: absolute; top: 0; left: 0; height: 0; width: 0;"></div>'
       );
 

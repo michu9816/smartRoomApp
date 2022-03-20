@@ -37,17 +37,23 @@ export default {
         color(){
             switch(this.data.type){
                 case "led":
+                case "gate":
                     return "";
                 case "bathroom":
-                    return "green"
+                    return "green";
+                case "tv":
+                    return "blue";
             }
         },
         img(){
             switch(this.data.type){
                 case "led":
-                    return "../assets/img1.png";
+                case "gate":
+                    return "../../assets/img1.png";
                 case "bathroom":
-                    return "../assets/img4.png"
+                    return "../../assets/img4.png"
+                case "tv":
+                    return "../../assets/img3.png"
             }
         }
     },

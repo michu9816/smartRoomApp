@@ -3,10 +3,8 @@
 	<div class="body">
 		<div class="statusBar bgGreen"></div>
 		<a href="/">
-			<div @click="goToMain()">
-				<div class="backButton">
+			<div class="backButton">
 				<p class="backButtonText">STRONA GŁÓWNA</p>
-				</div>
 			</div>
 		</a>
 		<div class="dhtStatuses bgGreen">

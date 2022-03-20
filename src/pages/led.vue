@@ -53,7 +53,7 @@
 		<div class="ledBox color" @click="openRGBWheel()">
 			<p class="ledTitleColor">Kolor</p>
 		<!-- <input id="color" type="color" v-model="light.color" @input="sendRGB" @change="sendRGB"> -->
-			<input type="submit" style="display:none;height: 1px;width: 1px;color: transparent;opacity: 0;" v-model="light.color" id="colorpicker" class="colorpicker" data-wcp-format="css"  hideKeyboard="true" data-wheelcolorpicker/>
+			<input type="submit" style="display:none;height: 1px;width: 1px;color: transparent;opacity: 0;" v-model="light.color" id="colorpicker" class="colorpicker" data-wcp-format="css" hideKeyboard="true" data-wheelcolorpicker/>
 		<!-- <input type="text" class="colorpicker" data-wheelcolorpicker /> -->
 		</div>
 	</div>
@@ -150,7 +150,7 @@
 			</div>
 			</div>
 			<div class="days">
-				<div v-for="(day,index) in weekDays" @click="()=>{light.scheduledDays[index]=!light.scheduledDays[index];$forceUpdate()}">
+				<div v-for="(day,index) in weekDays" @click="()=>{light.scheduledDays[index]=!light.scheduledDays[index];$forceUpdate()}" :key="index">
 					<div class="day" :class="light.scheduledDays[index]==1 ? '' : 'gray'">
 					<p class="dayText" :class="light.scheduledDays[index]==1 ? '' : 'gray'">{{ day }}</p>
 					</div>
@@ -178,6 +178,9 @@
 
 
 <script>
+import $ from "jquery"
+// import * as jQuery from "jquery"
+import "../js/jquery.wheelcolorpicker.js"
 import store from "../js/store.js"
 
 export default {

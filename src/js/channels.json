@@ -1,0 +1,268 @@
+{"channels":
+[{"name":"TVP 1 HD",
+    "program":"15037",
+    "type": "movie",
+    "id":"1:0:1:3ABD:514:13E:820000:0:0:0:"
+    },
+    {"name":"TVP 2 HD",
+    "program":"3106",
+    "type": "movie",
+    "id":"1:0:1:C22:1E78:71:820000:0:0:0:"
+    },
+    {"name":"TVP HD",
+    "program":"4408",
+    "type": "movie",
+    "id":"1:0:1:1138:2AF8:13E:820000:0:0:0:"
+    },
+    {"name":"TVN HD",
+    "program":"15821",
+    "type": "movie",
+    "id":"1:0:1:3DCD:640:13E:820000:0:0:0:"
+    },
+    {"name":"TVN 7 HD",
+    "program":"15827",
+    "type": "movie",
+    "id":"1:0:1:3DD3:640:13E:820000:0:0:0:"
+    },
+    {"name":"Polsat HD",
+    "program":"13201",
+    "type": "movie",
+    "id":"1:0:1:3391:3390:71:820000:0:0:0:"
+    },
+    {"name":"Polsat Film HD",
+    "program":"13208",
+    "type": "movie",
+    "id":"1:0:1:3398:3390:71:820000:0:0:0:"
+    },
+    {"name":"Super Polsat",
+    "program":"13211",
+    "type": "movie",
+    "id":"1:0:1:339B:3390:71:820000:0:0:0:"
+    },
+    {"name":"Polsat 2 HD ",
+    "program":"13210",
+    "type": "movie",
+    "id":"1:0:1:339A:3390:71:820000:0:0:0:"
+    },
+    {"name":"TV4 HD",
+    "program":"13203",
+    "type": "movie",
+    "id":"1:0:1:3393:3390:71:820000:0:0:0:"
+    },{"name":"CANAL+ PREMIUM HD",
+    "type": "movie",
+    "program":"13020",
+    "id":"1:0:1:32DC:190:13E:820000:0:0:0:"
+    },{"name":"CANAL+1 HD",
+    "type": "movie",
+    "program":"5101",
+    "id":"1:0:1:13ED:5DC:13E:820000:0:0:0:"
+    },{"name":"CANAL+ FILM HD",
+    "type": "movie",
+    "program":"14201",
+    "id":"1:0:1:3779:44C:13E:820000:0:0:0:"
+    },{"name":"CANAL+ FAMILY HD",
+    "type": "movie",
+    "program":"14203",
+    "id":"1:0:19:377B:44C:13E:820000:0:0:0:"
+    },{"name":"CANAL+ SERIALE HD",
+    "type": "movie",
+    "program":"14210",
+    "id":"1:0:19:3782:44C:13E:820000:0:0:0:"
+    },{"name":"HBO HD",
+    "type": "movie",
+    "program":"10510",
+    "id":"1:0:1:290E:1EDC:71:820000:0:0:0:"
+    },{"name":"HBO2 HD",
+    "type": "movie",
+    "program":"3593",
+    "id":"1:0:1:E09:2D50:13E:820000:0:0:0:"
+    },{"name":"HBO3 HD",
+    "type": "movie",
+    "program":"3594",
+    "id":"1:0:1:E0A:2D50:13E:820000:0:0:0:"
+    },{"name":"Cinemax HD",
+    "type": "movie",
+    "program":"3507",
+    "id":"1:0:1:DB3:2D50:13E:820000:0:0:0:"
+    },{"name":"Cinemax 2 HD",
+    "type": "movie",
+    "program":"3110",
+    "id":"1:0:1:C26:1E78:71:820000:0:0:0:"
+    },{"name":"CANAL+ SPORT HD",
+    "type": "sport",
+    "program":"13022",
+    "id":"1:0:1:32DE:190:13E:820000:0:0:0:"
+    },{"name":"CANAL+ SPORT 2 HD",
+    "type": "sport",
+    "program":"5102",
+    "id":"1:0:1:13EE:5DC:13E:820000:0:0:0:"
+    },{"name":"CANAL+ SPORT 3 HD",
+    "type": "sport",
+    "program":"4802",
+    "id":"1:0:1:12C2:2E7C:13E:820000:0:0:0:"
+    },{"name":"CANAL+ SPORT 4 HD",
+    "type": "sport",
+    "program":"4803",
+    "id":"1:0:1:12C3:2E7C:13E:820000:0:0:0:"
+    },{"name":"CANAL+ NOW",
+    "type": "sport",
+    "program":"13005",
+    "id":"1:0:1:32CD:190:13E:820000:0:0:0:"
+    },{"name":"nSport+",
+    "type": "sport",
+    "program":"15033",
+    "id":"1:0:1:3AB9:514:13E:820000:0:0:0:"
+    },{"name":"Eleven Sports 1 HD",
+    "type": "sport",
+    "program":"5107",
+    "id":"1:0:1:13F3:5DC:13E:820000:0:0:0:"
+    },{"name":"Eleven Sports 2 HD",
+    "type": "sport",
+    "program":"5109",
+    "id":"1:0:1:13F5:5DC:13E:820000:0:0:0:"
+    },{"name":"Eleven Sports 3 HD",
+    "type": "sport",
+    "program":"5112",
+    "id":"1:0:1:13F8:5DC:13E:820000:0:0:0:"
+    },{"name":"Eleven Sports 4 HD",
+    "type": "sport",
+    "program":"13006",
+    "id":"1:0:1:32CE:190:13E:820000:0:0:0:"
+    },{"name":"TVP Sport HD",
+    "type": "sport",
+    "program":"3505",
+    "id":"1:0:1:DB1:2D50:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport HD",
+    "type": "sport",
+    "program":"3101",
+    "id":"1:0:1:C1D:1E78:71:820000:0:0:0:"
+    },{"name":"Polsat Sport Extra HD",
+    "type": "sport",
+    "program":"3108",
+    "id":"1:0:1:C24:1E78:71:820000:0:0:0:"
+    },{"name":"Polsat Sport News HD",
+    "type": "sport",
+    "program":"10515",
+    "id":"1:0:1:2913:1EDC:71:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium 1",
+    "type": "sport",
+    "program":"1801",
+    "id":"1:0:1:709:32C8:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium 2",
+    "type": "sport",
+    "program":"1802",
+    "id":"1:0:1:70A:32C8:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium PPV3",
+    "type": "sport",
+    "program":"1803",
+    "id":"1:0:1:70B:32C8:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium PPV4",
+    "type": "sport",
+    "program":"1804",
+    "id":"1:0:1:70C:32C8:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium PPV5",
+    "type": "sport",
+    "program":"1805",
+    "id":"1:0:1:70D:32C8:13E:820000:0:0:0:"
+    },{"name":"Polsat Sport Premium PPV6",
+    "type": "sport",
+    "program":"1806",
+    "id":"1:0:1:70E:32C8:13E:820000:0:0:0:"
+    },{"name":"Eurosport 1 HD",
+    "type": "sport",
+    "program":"15909",
+    "id":"1:0:1:3E25:2EE0:13E:820000:0:0:0:"
+    },{"name":"Eurosport 2 HD",
+    "type": "sport",
+    "program":"10508",
+    "id":"1:0:1:290C:1EDC:71:820000:0:0:0:"
+    },{"name":"Polsat Games",
+    "type": "sport",
+    "program":"17028",
+    "id":"1:0:1:4284:2BC0:13E:820000:0:0:0:"
+    },{"name":"Cartoon Network HD",
+    "type": "animation",
+    "program":"10502",
+    "id":"1:0:1:2906:1EDC:71:820000:0:0:0:"
+    },{"name":"Nicktoons HD",
+    "type": "animation",
+    "program":"14",
+    "id":"1:0:1:E:1964:13E:820000:0:0:0:"
+    },{"name":"teleTOON+ HD",
+    "type": "animation",
+    "program":"14205",
+    "id":"1:0:19:377D:44C:13E:820000:0:0:0:"
+    },{"name":"MiniMini+ HD",
+    "type": "animation",
+    "program":"13024",
+    "id":"1:0:1:32E0:190:13E:820000:0:0:0:"
+    },{"name":"Disney Channel HD",
+    "type": "animation",
+    "program":"7350",
+    "id":"1:0:1:1CB6:1CE8:71:820000:0:0:0:"
+    },{"name":"Disney XD",
+    "type": "animation",
+    "program":"7349",
+    "id":"1:0:1:1CB5:1CE8:71:820000:0:0:0:"
+    },{"name":"Nick Jr",
+    "type": "animation",
+    "program":"3",
+    "id":"1:0:1:3:1964:13E:820000:0:0:0:"
+    },{"name":"Disney Junior",
+    "type": "animation",
+    "program":"10552",
+    "id":"1:0:1:2938:1EDC:71:820000:0:0:0:"
+    },{"name":"Polsat Jim Jam",
+    "type": "animation",
+    "program":"7351",
+    "id":"1:0:1:1CB7:1CE8:71:820000:0:0:0:"
+    },{"name":"Boomerang HD",
+    "type": "animation",
+    "program":"17045",
+    "id":"1:0:1:4295:2BC0:13E:820000:0:0:0:"
+    },{"name":"Nickelodeon",
+    "type": "animation",
+    "program":"9",
+    "id":"1:0:1:9:1964:13E:820000:0:0:0:"
+    },{"name":"BBC CBeebies",
+    "type": "animation",
+    "program":"2009",
+    "id":"1:0:1:7D9:22C4:13E:820000:0:0:0:"
+    },{"name":"TVP ABC",
+    "type": "animation",
+    "program":"15711",
+    "id":"1:0:1:3D5F:2C88:13E:820000:0:0:0:"
+    },{"name":"Baby TV",
+    "type": "animation",
+    "program":"16925",
+    "id":"1:0:1:421D:2F44:13E:820000:0:0:0:"
+    },{"name":"VOD 202",
+    "type": "vod",
+    "program":"60",
+    "id":"1:0:1:3C:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 203",
+    "type": "vod",
+    "program":"61",
+    "id":"1:0:1:3D:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 204",
+    "type": "vod",
+    "program":"62",
+    "id":"1:0:1:3E:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 205",
+    "type": "vod",
+    "program":"63",
+    "id":"1:0:1:3F:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 206",
+    "type": "vod",
+    "program":"64",
+    "id":"1:0:1:40:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 207",
+    "type": "vod",
+    "program":"65",
+    "id":"1:0:1:41:1964:13E:820000:0:0:0:"
+    },{"name":"VOD 208",
+    "type": "vod",
+    "program":"66",
+    "id":"1:0:1:42:1964:13E:820000:0:0:0:"
+    }]
+}

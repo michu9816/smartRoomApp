@@ -1,6 +1,8 @@
 import store from '../js/store.js';
+// import database from '../js/database.js';
+import $$ from 'dom7';
 
-export default {
+const database = {
     db: null,
     shortName: "smartRoom",
     version: "1.0",
@@ -102,8 +104,19 @@ export default {
     }
 }
 
-// database.init();
+database.init();
 // database.AddDevice("led","Michał LED2","192.168.8.41:8080")
 // database.RemoveDevice("4")
 
+export default database;
+
 // create new Device
+
+$$(document).on('page:init', '.page[data-name="addDevice"]', function (e) {
+    $$('#addDevice').on('click', () => {
+        let type = $$('#type').val();
+        let name = $$('#name').val();
+        let ip = $$('#ip').val();
+        database.AddDevice(type,name,ip);
+    });
+});

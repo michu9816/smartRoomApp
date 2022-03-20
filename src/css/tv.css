@@ -1,0 +1,182 @@
+.channels, .remote{
+	padding-bottom: 25px;
+	color: rgb(0, 95, 138);
+}
+.tvButtonRow{
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.tvButton{
+  text-align: center;
+    background: #005f8a;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+.menu{
+	display:grid;
+	grid-template-columns: auto auto;
+    background: rgb(0 95 138 / 40%);
+    font-weight: bold;
+}
+.menuBg{
+    font-weight: bold;
+    color: #005f8a;
+	position: fixed;
+	bottom:0;
+	width:100%;
+	background-color: white;
+	z-index: 10;
+}
+.menuItem{
+	text-align: center;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.menuItem.selected,.item.selected{
+	background: #005f8a;
+    color: white;
+}
+.currentPlaying{
+	color: rgb(0, 95, 138);
+    font-weight: bold;
+    margin: -10px 10px 10px;
+    background: #ffffff;
+    border: 1px solid rgb(0 95 138 / 40%);
+    border-radius: 5px;
+}
+.channel {
+    margin: 10px;
+	border-radius: 5px;
+    border: 1px solid rgb(0 95 138 / 40%);
+	overflow: hidden;
+    position: relative;
+}
+.channelName {
+	font-weight: bold;
+	padding: 5px 10px;
+	background: #005f8a;
+	color:white;
+    border-radius: 5px 5px 0px 0;
+}
+.channel .current{
+	padding: 5px 10px;
+	font-weight: bold;
+}
+.channel.green{
+	filter:hue-rotate(305deg);
+}
+.channel.gray{
+	filter:saturate(0);
+}
+.channel.purple{
+	filter:hue-rotate(115deg);
+}
+.channel.gold{
+	background: #005f8a;
+    color: white;
+    box-shadow: 0px 0px 15px #005f8a;
+	filter:hue-rotate(305deg);
+}
+.categories{
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	background: rgb(0 95 138 / 40%);
+	font-weight: bold;
+	margin:0 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.categories .item{
+	text-align: center;
+	padding: 5px 10px;
+}
+.matchLive{
+	border:1px solid #006d31;
+    margin: 10px;
+    border-radius: 5px;
+}
+.matchLive .header{
+	display:grid;
+	grid-template-columns: 100%;
+	font-weight: bold;
+	padding: 5px 10px;
+	background: #006d31;
+}
+.matchLive .live{
+	background: red;
+	text-align: center;
+	border-radius: 5px;
+	color:white;
+	padding:1px;
+}
+.matchLive .title{
+	text-align:center;
+}
+.previousChannels{
+	margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid dimgrey;
+    display: grid;
+    grid-template-columns: 100%;
+	row-gap: 5px;
+}
+.previousChannels .header{
+	padding: 5px 10px;
+    background: dimgrey;
+    /* margin: 10px; */
+    color: white;
+    font-weight: bold;
+}
+.previousChannels .item{
+	color: dimgrey;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+	overflow: hidden;
+	position: relative;
+}
+.previousChannels img{
+	width: 120px;
+    transform: rotate(-10deg);
+    position: absolute;
+    margin-top: -25px;
+    opacity: 0.5;
+    right: 0;
+}
+.watchDiv, .changeChannelDiv{
+	position: absolute;
+    height: 90px;
+    width: calc(50% - 5px);
+	z-index:8;
+}
+.changeChannelDiv{
+    right: 0px;
+}
+.loadingInfo{
+	text-align: center;
+	padding: 19px 0;
+	position: absolute;
+	color:white;
+    width: 100%;
+    height: 100%;
+    right: 0%;
+    transition-duration: 1s;
+    background: #005f8a;
+}
+.loadingInfo img{
+	width: 50%;
+    position: absolute;
+    opacity: 0.2;
+    left: 50%;
+    top: 0px;
+    transform: rotate(-15deg);
+}
+.swipeLeft{
+	right: -100%;
+}

@@ -3,6 +3,7 @@ import HomePage from '../pages/home.vue';
 import LedPage from '../pages/led.vue';
 import BathroomPage from '../pages/bathroom.vue';
 import GatePage from '../pages/gate.vue';
+import TvPage from '../pages/tv.vue';
 import AddDevicePage from '../pages/addDevice.vue';
 
 
@@ -31,6 +32,10 @@ var routes = [
   {
     path: '/gate/:deviceId',
     component: GatePage,
+  },
+  {
+    path: '/tv/:deviceId',
+    component: TvPage,
   },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
