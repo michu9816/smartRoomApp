@@ -23,7 +23,8 @@
 			v-for="(device,index) in devices"
 			:key="index"
 			:data="device"
-			:index="index">
+			:index="index"
+			@move-device="moveDevice">
 		</listDevice>
 		<a href="/new/">
 		<div class="newButton">
@@ -36,7 +37,9 @@
 
 
 <script>
+import $ from "jquery"
 import store from "../js/store.js"
+import database from "../js/database.js"
 
 import listDevice from "../components/listDevice.vue"
 
@@ -51,16 +54,7 @@ export default {
 	},
 	created: function () {
 		const vm = this;
-		vm.loadDevicesList();  
-
-// 			cordova.plugin.http.get('http://192.168.8.30/api/statusinfo', {
-//   id: '12',
-//   message: 'test'
-// }, { Authorization: 'OAuth2: token' }, function(response) {
-//   alert(response.status);
-// }, function(response) {
-//   alert(response.error);
-// });
+		vm.loadDevicesList();
 	},
 	methods: {
 		loadDevicesList(){
@@ -69,9 +63,25 @@ export default {
 			if(list[0] == "loading" || list[0] == null){
 				setTimeout(vm.loadDevicesList,500);
 			}else{
-				vm.devices = list;
+				this.refreshDevicesList();
 			}
-		}
+		},
+		refreshDevicesList(){
+			const vm = this;
+			console.log("refresh")
+			let devices = store.getters.devices.value;
+			devices = devices.sort(function(a, b){return a.position - b.position});
+			vm.devices = devices;
+		},
+        moveDevice(position,direction){
+			const vm = this;
+            database.ChangeDevicePosition(position,direction);
+			setTimeout(function(){
+				vm.refreshDevicesList();
+				$(".swipeout").css({transform:""}).removeClass("swipeout-actions-opened").find(".swipeout-arrows-up, .swipeout-delete").css({transform:""})
+				$(".listDevice.swipeout-content").css({transform:""})
+			},50)
+        }
 	}
 }
 </script>

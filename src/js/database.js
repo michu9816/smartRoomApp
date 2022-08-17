@@ -39,8 +39,14 @@ const database = {
 		this.db.transaction(
 			function (tx) {
                 // alert("creating table!");
+				// tx.executeSql(
+				// 	"DROP TABLE Devices",
+				// 	[],
+				// 	this.nullHandler,
+				// 	this.errorHandler
+				// 	);
 				tx.executeSql(
-					"CREATE TABLE IF NOT EXISTS Devices(id INTEGER NOT NULL PRIMARY KEY, type TEXT NOT NULL, name TEXT NOT NULL, ip TEXT NOT NULL);",
+					"CREATE TABLE IF NOT EXISTS Devices(id INTEGER NOT NULL PRIMARY KEY, type TEXT NOT NULL, name TEXT NOT NULL, ip TEXT NOT NULL, position INTEGER NOT NULL);",
 					[],
 					this.nullHandler,
 					this.errorHandler
@@ -61,6 +67,7 @@ const database = {
 			transaction.executeSql('SELECT * FROM Devices;', [],
 			function(transaction, result) {
                 let data = [];
+                console.log(result);
                 for(let i in result.rows){
                     const element = result.rows[i];
                     if(typeof(element) == "object"){
@@ -81,7 +88,9 @@ const database = {
         }
 		this.db.transaction(function(transaction) {
             // alert('Adding device 2');
-			transaction.executeSql('INSERT INTO Devices(type,name,ip) VALUES (?,?,?)',[type,name,ip],
+            const devices = store.getters.devices.value;
+            const position = parseInt(devices[devices.length - 1]?.position + 1) || 1;
+			transaction.executeSql('INSERT INTO Devices(type,name,ip,position) VALUES (?,?,?,?);',[type,name,ip,position],
 			this.nullHandler,this.errorHandler);
 		}.bind(this));
 			
@@ -96,6 +105,33 @@ const database = {
         
 		this.db.transaction(function(transaction) {
 			transaction.executeSql('DELETE FROM Devices WHERE id = ?',[id],
+			this.nullHandler,this.errorHandler);
+		}.bind(this));
+			
+		this.GetDevices(function(){});
+		return false;
+    },
+    ChangeDevicePosition: function(position,direction) {
+        const app = this;
+        if (!window.openDatabase) {
+            alert('To urządzenie nie obsługuje SQLite!');
+            return;
+        }
+    
+        let newPosition = position;
+        if(direction == "up"){
+            newPosition -= 1;
+        }else{
+            newPosition += 1;
+        }
+        console.debug(`Current position ${position}`)
+        console.debug(`Moving to ${newPosition}`)
+		this.db.transaction(function(transaction) {
+			transaction.executeSql('UPDATE Devices SET position = ? WHERE position = ?;',[99,newPosition],
+			this.nullHandler,this.errorHandler);
+			transaction.executeSql('UPDATE Devices SET position = ? WHERE position = ?;',[newPosition,position],
+			this.nullHandler,this.errorHandler);
+			transaction.executeSql('UPDATE Devices SET position = ? WHERE position = ?;',[position, 99],
 			this.nullHandler,this.errorHandler);
 		}.bind(this));
 			

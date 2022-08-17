@@ -20,7 +20,37 @@ const store = createStore({
         description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
       },
     ],
-    devices: ["loading"]
+    devices: ["loading"],
+    types: [{
+      symbol:"led",
+      name:"Pasek LED",
+      icon: "fa-lightbulb",
+      color:"red",
+    },
+    {
+      symbol:"lamp",
+      name:"Lampki",
+      icon: "fa-lightbulb",
+      color:"red",
+    },
+    {
+      symbol:"bathroom",
+      name:"Wentylator łazienkowy",
+      icon: "fa-fan",
+      color:"green",
+    },
+    {
+      symbol:"tv",
+      name:"Dekoder Open Webif",
+      icon: "fa-tv",
+      color:"blue",
+    },
+    {
+      symbol:"gate",
+      name:"Brama",
+      icon: "fa-garage",
+      color:"red",
+    }]
   },
   getters: {
     products({ state }) {
@@ -28,6 +58,9 @@ const store = createStore({
     },
     devices({ state }) {
       return state.devices;
+    },
+    types({ state }) {
+      return state.types;
     }
   },
   actions: {

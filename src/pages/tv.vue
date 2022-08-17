@@ -82,7 +82,6 @@ import tvHistory from '../components/tv-history.vue';
 import channelsList from '../js/channels.json';
 import store from "../js/store.js"
 
-
 export default {
 	components: {
 		tvChannel: tvChannel,
@@ -182,7 +181,7 @@ export default {
 
 				request.send(null);
 			}catch(e){
-				
+				alert(e);
 			}
 		},
 		sendSignal: function(signal){

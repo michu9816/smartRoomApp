@@ -1,7 +1,7 @@
 <template>
 	<div class="page" data-name="addDevice">
 		<a href="/">
-			<div class="backButton">
+			<div id="backButton" class="backButton">
 				<p class="backButtonText">STRONA GŁÓWNA</p>
 			</div>
 		</a>
@@ -33,20 +33,8 @@
 						<option selected disabled hidden value="">
 							Wybierz
 						</option>
-						<option value="led">
-							Pasek LED
-						</option>
-						<option value="lamp">
-							Lampki
-						</option>
-						<option value="bathroom">
-							Wentylator łazienkowy
-						</option>
-						<option value="tv">
-							Dekoder Open Webif
-						</option>
-						<option value="gate">
-							Brama
+						<option v-for="type of types" :key="type.symbol" :value="type.symbol">
+							{{ type.name }}
 						</option>
 					</select>
 				</div>
@@ -60,14 +48,23 @@
 	</div>
 </template>
 <script>
+import $ from "jquery"
 import app from "./home.vue";
-	export default {
-		methods:{
-			reloadloadDevicesList(){
-				setTimeout(function(){
-					app.loadDevicesList;
-				},50)
-			}
+import store from "../js/store.js"
+
+export default {
+	data(){
+		return{
+			types: store.getters.types.value
 		}
-	};
+	},
+	methods:{
+		reloadloadDevicesList(){
+			setTimeout(function(){
+				app.loadDevicesList;
+				$("#backButton").click();
+			},50)
+		}
+	}
+};
 </script>

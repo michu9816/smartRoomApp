@@ -30,13 +30,14 @@ export default {
 		playStream: function(id){
 			const vm = this;
 			var videoUrl = "http://"+vm.recieverIp+":8001/"+id;
-			// libVLCPlayer.stop();
-			// const options = {autoPlay: true, hideControls: true};
-			// libVLCPlayer.play(videoUrl);
-			// libVLCPlayer.stop()
+	
+			const options = {autoPlay: true, hideControls: false};
+			libVLCPlayer.play(videoUrl,options);
 			
-			// libVLCPlayer.onDestroyVlc(libVLCPlayer.stop());
-			// libVLCPlayer.onError(libVLCPlayer.stop());
+			libVLCPlayer.onPauseVlc(alert("x"));
+			libVLCPlayer.onVideoEnd(alert("y"));
+			libVLCPlayer.onDestroyVlc(alert("z"));
+			libVLCPlayer.onError(alert("xA"));
 			// libVLCPlayer.onVideoEnd(libVLCPlayer.stop());
 			// libVLCPlayer.stop([success], [failed]);
 			// window.VideoPlayerVLC.play(
@@ -48,18 +49,18 @@ export default {
 			// window.plugins.streamingMedia.playVideo(videoUrl);
 			
 			// Play a video with callbacks
-			var options = {
-				successCallback: function() {
-					console.log("Video was closed without error.");
-				},
-				errorCallback: function(errMsg) {
-					console.log("Error! " + errMsg);
-				},
-				orientation: 'landscape',
-				shouldAutoClose: true,  // true(default)/false
-				controls: true // true(default)/false. Used to hide controls on fullscreen
-			};
-			window.plugins.streamingMedia.playVideo(videoUrl, options);
+			// var options = {
+			// 	successCallback: function() {
+			// 		console.log("Video was closed without error.");
+			// 	},
+			// 	errorCallback: function(errMsg) {
+			// 		console.log("Error! " + errMsg);
+			// 	},
+			// 	orientation: 'landscape',
+			// 	shouldAutoClose: true,  // true(default)/false
+			// 	controls: true // true(default)/false. Used to hide controls on fullscreen
+			// };
+			// window.plugins.streamingMedia.playVideo(videoUrl, options);
 			
 			
 			// var audioUrl = videoUrl;
